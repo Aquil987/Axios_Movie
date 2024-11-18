@@ -1,16 +1,19 @@
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
-  overflow: hidden;
-}
-
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
+} 
+ .container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 10rem;
+  overflow-x: hidden;
+  
 }
+
+
 
 .grid {
   display: grid;
@@ -40,12 +43,13 @@ body {
   }
 }
 
-.hero-container {
+ .hero-container {
   margin: 0.5rem;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #007BFF;
 }
 
 .main-container {
@@ -55,6 +59,7 @@ body {
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s;
+  background-color: black;
 }
 
 .main-container:hover {
@@ -63,14 +68,17 @@ body {
 
 .poster-container {
   width: 100%;
-  height: 400px;
+  height: 350px;
   overflow: hidden;
+  position: relative;
 }
 
 .poster {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  position: absolute;
+  top: 20px;
+  object-fit: cover; 
 }
 
 .ticket-container {
@@ -99,4 +107,4 @@ body {
 
 .ticket__buy-btn:hover {
   background-color: #0056b3;
-}
+} 

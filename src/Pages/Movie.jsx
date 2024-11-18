@@ -23,7 +23,7 @@ const Movie = () => {
         getMovieData();
     },[])
   return (
-    <ul className="container grid grid-four--cols">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 container p-7 mx-auto">
         {data.map((item) => {
             return (
                 <Card key={item.imdbID} movieData={item} />
